@@ -37,6 +37,7 @@
     
 
  LBL_MSG.hidden=YES;
+    
  
     
     pref = [NSUserDefaults standardUserDefaults];
@@ -286,8 +287,8 @@
             
             
             img1.layer.cornerRadius =  img1.frame.size.height/2;
-            img1.layer.BorderColor = [[UIColor colorWithRed:227.0/255.0 green:128.0/255.0 blue:139.0/255.0 alpha:1.0f] CGColor];
-            img1.layer.BorderWidth = 1;
+            img1.layer.borderColor = [[UIColor colorWithRed:227.0/255.0 green:128.0/255.0 blue:139.0/255.0 alpha:1.0f] CGColor];
+            img1.layer.borderWidth = 1;
             img1.clipsToBounds=YES;
             tv_message.editable=NO;
             tv_message.scrollEnabled=YES;
@@ -363,8 +364,8 @@
         
         
         img1.layer.cornerRadius = 25.0;
-        img1.layer.BorderColor = [[UIColor grayColor] CGColor];
-        img1.layer.BorderWidth = 1;
+        img1.layer.borderColor = [[UIColor grayColor] CGColor];
+        img1.layer.borderWidth = 1;
         img1.clipsToBounds=YES;
         tv_message.editable=NO;
         tv_message.scrollEnabled=YES;

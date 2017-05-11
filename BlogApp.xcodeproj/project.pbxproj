@@ -1141,6 +1141,7 @@
 					04A168931DE2B42D00A582C2 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = CMDT3JM28A;
+						ProvisioningStyle = Manual;
 					};
 					04A168AC1DE2B42D00A582C2 = {
 						CreatedOnToolsVersion = 6.1;
@@ -1467,7 +1468,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1477,7 +1479,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "4b35b3f0-bdb4-4c70-98bb-9cc220056665";
+				PROVISIONING_PROFILE_SPECIFIER = NewCasanova;
 			};
 			name = Debug;
 		};
@@ -1486,7 +1489,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1496,7 +1500,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "4b35b3f0-bdb4-4c70-98bb-9cc220056665";
+				PROVISIONING_PROFILE_SPECIFIER = NewCasanova;
 			};
 			name = Release;
 		};

@@ -20,12 +20,11 @@
     [super viewDidLoad];
     
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius = lbl_color.frame.size.width/2;//12.0;
-    lbl_color.layer.borderColor = [UIColor grayColor].CGColor;
-    lbl_color.layer.borderWidth = 1.0;
+    lbl_color.layer.cornerRadius = 12.0;//lbl_color.frame.size.width/2;
+
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;//12.0;
+    lbl_blank.layer.cornerRadius = 12.0; //lbl_blank.frame.size.width/2;//
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
     
@@ -209,7 +208,7 @@
                 mainView.frame=CGRectMake(0, var, (([UIScreen mainScreen].bounds.size.width)), stock_hold.frame.size.height);
                 
                 btn_cancel.layer.cornerRadius = 5.0; // this value vary as per your desire
-                btn_cancel.layer.borderColor=[UIColor grayColor].CGColor;
+                btn_cancel.layer.borderColor=[UIColor colorWithRed:86.0/255 green:82.0/255 blue:100.0/255 alpha:1.0].CGColor;
                 btn_cancel.layer.borderWidth=1.0f;
                 btn_cancel.clipsToBounds = YES;
                 
@@ -226,12 +225,12 @@
                 NSString *str_data=[[arrdata objectAtIndex:i] valueForKey:@"flag"];
                 if ([str_data integerValue] ==1)
                 {
-                    lbl_name.backgroundColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
+                    lbl_name.backgroundColor=[UIColor colorWithRed:219.0/255 green:84.0/255 blue:97.0/255 alpha:1.0];
                       lbl_name.text=[[[arrdata objectAtIndex:i] valueForKey:@"from_user_name"] uppercaseString];
                 }
                 else
                 {
-                    lbl_name.backgroundColor=[UIColor colorWithRed:227.0/255 green:128.0/255 blue:139.0/255 alpha:1.0];
+                    lbl_name.backgroundColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
                     lbl_name.text=[[[arrdata objectAtIndex:i] valueForKey:@"from_user_name"] uppercaseString];
                 }
       

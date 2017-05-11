@@ -48,10 +48,10 @@
     tv_message.editable=NO;
     tv_message.scrollEnabled=YES;
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius = lbl_color.frame.size.width/2;//12.0;
+    lbl_color.layer.cornerRadius = 12.0; //lbl_color.frame.size.width/2;//
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;//12.0;
+    lbl_blank.layer.cornerRadius = 12.0;//lbl_blank.frame.size.width;
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
     
@@ -296,8 +296,8 @@
             
             img1.layer.cornerRadius =  img1.frame.size.height/2;
             
-            img1.layer.BorderColor = [[UIColor colorWithRed:227.0/255.0 green:128.0/255.0 blue:139.0/255.0 alpha:1.0f] CGColor];
-            img1.layer.BorderWidth = 1;
+            img1.layer.borderColor = [[UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:255.0/255.0 alpha:1.0f] CGColor];
+            img1.layer.borderWidth = 1;
             img1.clipsToBounds=YES;
             tv_message.editable=NO;
             tv_message.scrollEnabled=YES;
@@ -307,11 +307,11 @@
             
             if ([[[Arr_data valueForKey:@"flag"] objectAtIndex:i]isEqualToString:@"received"])
             {
-                lbl_time.text=[NSString stringWithFormat:@"MESSAGE RECEIVED"];
+                lbl_time.text=[NSString stringWithFormat:@"M E S S A G E  R E C E I V E D"];
             }
             else
             {
-                lbl_time.text=[NSString stringWithFormat:@"MESSAGE SENT"];
+                lbl_time.text=[NSString stringWithFormat:@"M E S S A G E  S E N T"];
             }
           
             str_user_id5=[[Arr_data valueForKey:@"user_id"] objectAtIndex:i];
@@ -375,8 +375,8 @@
         
         
         img1.layer.cornerRadius = 25.0;
-        img1.layer.BorderColor = [[UIColor grayColor] CGColor];
-        img1.layer.BorderWidth = 1;
+        img1.layer.borderColor = [[UIColor grayColor] CGColor];
+        img1.layer.borderWidth = 1;
         img1.clipsToBounds=YES;
         tv_message.editable=NO;
         tv_message.scrollEnabled=YES;

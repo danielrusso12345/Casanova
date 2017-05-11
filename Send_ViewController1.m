@@ -73,12 +73,12 @@
     lbl_heading.text=[pref valueForKey:@"pref_cat_name"];
     lbl_title.text=str_sub_cate;
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius =lbl_color.frame.size.width/2; //12.0;
+    lbl_color.layer.cornerRadius =12.0; //lbl_color.frame.size.width/2;
     lbl_color.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_color.layer.borderWidth = 1.0;
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;//12.0;
+    lbl_blank.layer.cornerRadius = 12.0; //lbl_blank.frame.size.width/2;
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
     
@@ -105,11 +105,11 @@
         flag=1;
        TV_terms.text=@"Please, tell me anything…";
         
-        [TV_terms.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.5] CGColor]];
+    [TV_terms.layer setBorderColor:[UIColor colorWithRed:86.0/255.0 green:82.0/255.0 blue:100.0/255.0 alpha:1.0f].CGColor];
         [TV_terms.layer setBorderWidth:1.0];
         TV_terms.clipsToBounds = YES;
     TV_terms.layer.masksToBounds = true;
-    TV_terms.layer.cornerRadius = 10.0;
+    TV_terms.layer.cornerRadius = 5.0;
 
 
     lbl_bg11.layer.masksToBounds = true;
@@ -1926,10 +1926,10 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     
     btn_attach.layer.masksToBounds = true;
     btn_attach.layer.cornerRadius = 5.0;
-    btn_attach.layer.borderColor = [UIColor grayColor].CGColor;
+    btn_attach.layer.borderColor = [UIColor whiteColor].CGColor;
     btn_attach.layer.borderWidth = 1.0;
-    btn_attach.backgroundColor=[UIColor colorWithRed:38.0/255 green:84.0/255 blue:124.0/255 alpha:1.0];
-    [btn_attach setTitle:@"ATTACHED" forState:UIControlStateNormal];
+    btn_attach.backgroundColor=[UIColor colorWithRed:86.0/255 green:82.0/255 blue:100.0/255 alpha:1.0];
+    [btn_attach setTitle:@"A T T A C H E D" forState:UIControlStateNormal];
    // btn_attach.tintColor=[UIColor whiteColor];
     [btn_attach setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
@@ -1987,8 +1987,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     btn_attach.layer.cornerRadius = 5.0;
     btn_attach.layer.borderColor = [UIColor grayColor].CGColor;
     btn_attach.layer.borderWidth = 1.0;
-    btn_attach.backgroundColor=[UIColor colorWithRed:38.0/255 green:84.0/255 blue:124.0/255 alpha:1.0];
-    [btn_attach setTitle:@"ATTACHED" forState:UIControlStateNormal];
+    btn_attach.backgroundColor=[UIColor colorWithRed:86.0/255 green:82.0/255 blue:100.0/255 alpha:1.0];
+    [btn_attach setTitle:@"A T T A C H E D" forState:UIControlStateNormal];
     // btn_attach.tintColor=[UIColor whiteColor];
     [btn_attach setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
@@ -2039,8 +2039,8 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     btn_attach.layer.cornerRadius = 5.0;
     btn_attach.layer.borderColor = [UIColor grayColor].CGColor;
     btn_attach.layer.borderWidth = 1.0;
-    btn_attach.backgroundColor=[UIColor colorWithRed:38.0/255 green:84.0/255 blue:124.0/255 alpha:1.0];
-    [btn_attach setTitle:@"ATTACHED" forState:UIControlStateNormal];
+    btn_attach.backgroundColor=[UIColor colorWithRed:86.0/255 green:82.0/255 blue:100.0/255 alpha:1.0];
+    [btn_attach setTitle:@"A T T A C H E D" forState:UIControlStateNormal];
     // btn_attach.tintColor=[UIColor whiteColor];
     [btn_attach setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
 

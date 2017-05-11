@@ -51,10 +51,10 @@
      Arr_skill_name=[[NSMutableArray alloc]init];
     
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius =lbl_color.frame.size.width/2; //12.0;
+    lbl_color.layer.cornerRadius = 12.0;//lbl_color.frame.size.width/2;
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;//12.0;
+    lbl_blank.layer.cornerRadius = 12.0;//lbl_blank.frame.size.width/2;
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
 }
@@ -382,13 +382,13 @@
     [self.navigationController pushViewController:show animated:NO];
     }
 }
--(IBAction)update_Action:(id)sender
-{
+//-(IBAction)update_Action:(id)sender
+//{
   
-    Update_SignupVC *show=[[Update_SignupVC alloc]initWithNibName:@"Update_SignupVC" bundle:nil];
+//    Update_SignupVC *show=[[Update_SignupVC alloc]initWithNibName:@"Update_SignupVC" bundle:nil];
     // show.str_cat_id=str_skil_id;
     //  show.str_Showreview=@"yes";
     
-    [self.navigationController pushViewController:show animated:NO];
-}
+//    [self.navigationController pushViewController:show animated:NO];
+//}
 @end
