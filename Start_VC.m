@@ -9,6 +9,8 @@
 #import "Start_VC.h"
 #import "LoginViewController.h"
 #import "CategoriesViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
 //#import "DEMOMenuViewController.h"
 //#import "DEMONavigationController.h"
 //#import "AppDelegate.h"
@@ -38,24 +40,22 @@
 }
 
 - (void)startApp {
-    //    if ([pref valueForKey:@"pref_User_Id"])
-    //    {
-    //        [pref setObject:@"yes" forKey:@"pref_log_yes"];
-    //
-    //    }
-    //    else
-    //    {
-    //        [pref setObject:@"no" forKey:@"pref_log_yes"];
-    
-    //    }
-    if ([[userDefaults valueForKey:@"pref_fb_check"] isEqualToString:@"sushil"]) {
-        CategoriesViewController *categoriesVC = [[CategoriesViewController alloc] initWithNibName:@"CategoriesViewController" bundle:nil];
-        [self.navigationController pushViewController:categoriesVC animated:NO];
+    if ([FBSDKAccessToken currentAccessToken]) {
+        NSLog(@"User already logged in using FB");
     }
     else {
-        LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
-        [self.navigationController pushViewController:loginVC animated:NO];
+        if ([[userDefaults valueForKey:@"pref_fb_check"] isEqualToString:@"sushil"]) {
+            NSLog(@"User logged in using email");
+            CategoriesViewController *categoriesVC = [[CategoriesViewController alloc] initWithNibName:@"CategoriesViewController" bundle:nil];
+            [self.navigationController pushViewController:categoriesVC animated:NO];
+        }
+        else {
+            NSLog(@"User not logged in");
+            LoginViewController *loginVC = [[LoginViewController alloc] initWithNibName:@"LoginViewController" bundle:nil];
+            [self.navigationController pushViewController:loginVC animated:NO];
+        }
     }
+    
 }
 
 //- (BOOL)CheckNetwork {

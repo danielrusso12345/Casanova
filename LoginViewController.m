@@ -12,17 +12,18 @@
 #import "AppDelegate.h"
 #import "LoginViewController2.h"
 #import "Customer_SignupVC.h"
+#import "CategoriesViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 //#import "DEMONavigationController.h"
 //#import "DEMOMenuViewController.h"
 //#import "Customer_SignupVC.h"
 //#import "ForgotPasswordViewController.h"
 //#import "Customer_home_ViewController.h"
 //#import "WelcomeOptionVC.h"
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKLoginKit/FBSDKLoginKit.h>
+
 //#import <GoogleMaps/GoogleMaps.h>
 //#import <GooglePlus/GooglePlus.h>
-#import "CategoriesViewController.h"
 //Or you can sign in with social media
 #define TextNumeric @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789\"<>,.?/';:|]}[{+=_-)(*&^%$#@!~`"
 #define TextNumericspace @"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789. "
@@ -37,6 +38,7 @@
 }
 //@property (nonatomic, strong) AppDelegate *appDelegate;
 //-(void)handleFBSessionStateChangeWithNotification:(NSNotification *)notification;
+@property (weak, nonatomic) IBOutlet FBSDKLoginButton *fbLoginButton;
 
 @end
 
@@ -53,7 +55,9 @@ static NSString * const kClientId = @"418390474126-h1rkg878ph3pva9fmh8stf04utmo2
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     pref=[NSUserDefaults standardUserDefaults];
+     pref = [NSUserDefaults standardUserDefaults];
+    self.fbLoginButton.readPermissions =
+    @[@"public_profile", @"email"];
     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     [loginManager logOut];
     //[FBSDKAccessToken setCurrentAccessToken:nil];
