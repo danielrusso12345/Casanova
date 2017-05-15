@@ -42,18 +42,15 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *txt_Username,*txt_Username1;
 @property (weak, nonatomic) IBOutlet UITextField *txt_password,*TF_country,*TF_city;;
-
 @property (weak, nonatomic) IBOutlet UIButton *btn_loging,*btn_check;
 @property(strong,nonatomic)UIActivityViewController *activityViewController;
 //@property (weak,nonatomic) NSString *str_instagram,*str_InstaName,*str_InstaImg;
 //@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
 @property (weak, nonatomic) IBOutlet UIView *my_view;
 - (IBAction)Forgot_Button:(id)sender;
-
 - (IBAction)login_button:(id)sender;
 - (IBAction)FaceBook:(id)sender;
 //- (IBAction)FacebookLogin_Action:(id)sender;
-
 //-(IBAction)instagram_Action:(id)sender;
 
 @end

@@ -8,12 +8,7 @@
 
 #import <UIKit/UIKit.h>
 //#import "JSONRequestHelper.h"
-@interface Start_VC : UIViewController//<WebserviceDelegate>
-{
-    NSUserDefaults *pref;
-}
 
-
-@property (strong, nonatomic) IBOutlet UIButton *btn_English,*btn_Arabic;
+@interface Start_VC : UIViewController
 
 @end

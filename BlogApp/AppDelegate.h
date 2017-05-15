@@ -8,17 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-{
-        NSUserDefaults *pref;
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSUserDefaults *userDefaults;
 }
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (nonatomic, retain) UINavigationController *nc;
-
--(void)backtohome;
-
-
 @end
-

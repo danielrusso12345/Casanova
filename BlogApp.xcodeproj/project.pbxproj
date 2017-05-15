@@ -89,8 +89,6 @@
 		04A169251DE2B75700A582C2 /* EXPhotoViewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A169241DE2B75700A582C2 /* EXPhotoViewer.m */; };
 		04A169271DE2B82B00A582C2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A169261DE2B82B00A582C2 /* Default-568h@2x.png */; };
 		04A169291DE2BA6B00A582C2 /* My View 1 Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 04A169281DE2BA6B00A582C2 /* My View 1 Login.png */; };
-		04A1692C1DE2BB3400A582C2 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1692A1DE2BB3400A582C2 /* FBSDKCoreKit.framework */; };
-		04A1692D1DE2BB3400A582C2 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04A1692B1DE2BB3400A582C2 /* FBSDKLoginKit.framework */; };
 		04A169331DE2C76600A582C2 /* Home1155.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A1692F1DE2C76600A582C2 /* Home1155.xib */; };
 		04A169341DE2C76600A582C2 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A169311DE2C76600A582C2 /* CategoriesViewController.m */; };
 		04A169351DE2C76600A582C2 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A169321DE2C76600A582C2 /* CategoriesViewController.xib */; };
@@ -183,6 +181,8 @@
 		04A79D3E1DE318CA00619E85 /* Reviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A79D3B1DE318CA00619E85 /* Reviews.xib */; };
 		04A79D431DE3229E00619E85 /* Respond_ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D411DE3229E00619E85 /* Respond_ViewController1.m */; };
 		04A79D441DE3229E00619E85 /* Respond_ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */; };
+		6E264AC01EC9F8E400B3798F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */; };
+		6EA7FD741EC9FA2E00C02103 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,8 +335,6 @@
 		04A169241DE2B75700A582C2 /* EXPhotoViewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPhotoViewer.m; sourceTree = "<group>"; };
 		04A169261DE2B82B00A582C2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		04A169281DE2BA6B00A582C2 /* My View 1 Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My View 1 Login.png"; sourceTree = "<group>"; };
-		04A1692A1DE2BB3400A582C2 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		04A1692B1DE2BB3400A582C2 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		04A1692F1DE2C76600A582C2 /* Home1155.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Home1155.xib; sourceTree = "<group>"; };
 		04A169301DE2C76600A582C2 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
 		04A169311DE2C76600A582C2 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
@@ -444,6 +442,8 @@
 		04A79D401DE3229E00619E85 /* Respond_ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Respond_ViewController1.h; sourceTree = "<group>"; };
 		04A79D411DE3229E00619E85 /* Respond_ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Respond_ViewController1.m; sourceTree = "<group>"; };
 		04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Respond_ViewController1.xib; sourceTree = "<group>"; };
+		6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -451,11 +451,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EA7FD741EC9FA2E00C02103 /* FBSDKCoreKit.framework in Frameworks */,
 				049DDF7B1E20E28C006B1814 /* CoreGraphics.framework in Frameworks */,
 				0441D4531DE8459800F41097 /* AssetsLibrary.framework in Frameworks */,
+				6E264AC01EC9F8E400B3798F /* FBSDKLoginKit.framework in Frameworks */,
 				0441D4511DE8446D00F41097 /* QuartzCore.framework in Frameworks */,
-				04A1692D1DE2BB3400A582C2 /* FBSDKLoginKit.framework in Frameworks */,
-				04A1692C1DE2BB3400A582C2 /* FBSDKCoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,27 +629,24 @@
 		04A1688B1DE2B42D00A582C2 = {
 			isa = PBXGroup;
 			children = (
+				6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */,
+				6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */,
 				049DDF7A1E20E28C006B1814 /* CoreGraphics.framework */,
+				0441D4521DE8459800F41097 /* AssetsLibrary.framework */,
+				0441D4501DE8446D00F41097 /* QuartzCore.framework */,
+				04A168961DE2B42D00A582C2 /* BlogApp */,
+				04A168C71DE2B58B00A582C2 /* splash */,
+				04A168C81DE2B59B00A582C2 /* login */,
 				049DDF721E20E241006B1814 /* ZYQAssetPickerController */,
 				04A669551E1FCCF0002885E1 /* Terms_condition_view */,
 				04A669451E1FC280002885E1 /* Update_profile_view */,
-				04A669421E1FC0AD002885E1 /* pc@3x.png */,
 				04A6693A1E1FB947002885E1 /* forgot_password_view */,
-				04A669371E1FAEAC002885E1 /* checked24.png */,
-				04A669341E1FA3A1002885E1 /* unch24.png */,
 				04A6692C1E1F9CF9002885E1 /* SignUp_view */,
-				04A2A2D81DED62BB00DD9CDD /* Background Casanova 2.jpg */,
 				044B1EB71DEC411200FD4AFE /* PHOTO TWEETS */,
 				049AA2291DE98C85004B0157 /* start_message_view */,
-				0441D4521DE8459800F41097 /* AssetsLibrary.framework */,
-				0441D4501DE8446D00F41097 /* QuartzCore.framework */,
 				04B69CA81DE81CE6005ABD3D /* GKImagePicker */,
 				045F9BA31DE6F9CF00C6CF34 /* view_picture */,
 				04A1CCC51DE5A2EE005CAEAA /* AppIcon */,
-				04A1CCBF1DE5A2E3005CAEAA /* iTunesArtwork@1x.png */,
-				04A1CCC01DE5A2E3005CAEAA /* iTunesArtwork@2x.png */,
-				04A1CCC11DE5A2E3005CAEAA /* iTunesArtwork@3x.png */,
-				04A1CCBD1DE5A290005CAEAA /* splash.png */,
 				04A640B11DE44D29000124D5 /* message_view2 */,
 				04A640AB1DE449A8000124D5 /* details_view */,
 				04A640851DE4109A000124D5 /* My_message_view_CV */,
@@ -662,17 +659,20 @@
 				04A1693B1DE2DA4E00A582C2 /* SubCategory_view */,
 				04A1693A1DE2D8D100A582C2 /* FONT */,
 				04A1692E1DE2C6B900A582C2 /* Category_view */,
-				04A1692A1DE2BB3400A582C2 /* FBSDKCoreKit.framework */,
-				04A1692B1DE2BB3400A582C2 /* FBSDKLoginKit.framework */,
-				04A169281DE2BA6B00A582C2 /* My View 1 Login.png */,
-				04A169261DE2B82B00A582C2 /* Default-568h@2x.png */,
-				04A168CB1DE2B6AE00A582C2 /* ExtraFiles */,
-				04A168C91DE2B5C900A582C2 /* Logo.png */,
-				04A168C81DE2B59B00A582C2 /* login */,
-				04A168C71DE2B58B00A582C2 /* splash */,
-				04A168961DE2B42D00A582C2 /* BlogApp */,
 				04A168B01DE2B42D00A582C2 /* BlogAppTests */,
 				04A168951DE2B42D00A582C2 /* Products */,
+				04A168CB1DE2B6AE00A582C2 /* ExtraFiles */,
+				04A669421E1FC0AD002885E1 /* pc@3x.png */,
+				04A669371E1FAEAC002885E1 /* checked24.png */,
+				04A669341E1FA3A1002885E1 /* unch24.png */,
+				04A2A2D81DED62BB00DD9CDD /* Background Casanova 2.jpg */,
+				04A1CCBF1DE5A2E3005CAEAA /* iTunesArtwork@1x.png */,
+				04A1CCC01DE5A2E3005CAEAA /* iTunesArtwork@2x.png */,
+				04A1CCC11DE5A2E3005CAEAA /* iTunesArtwork@3x.png */,
+				04A1CCBD1DE5A290005CAEAA /* splash.png */,
+				04A169281DE2BA6B00A582C2 /* My View 1 Login.png */,
+				04A169261DE2B82B00A582C2 /* Default-568h@2x.png */,
+				04A168C91DE2B5C900A582C2 /* Logo.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1474,6 +1474,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = BlogApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1495,6 +1496,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"~/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = BlogApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

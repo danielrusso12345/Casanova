@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,15 +19,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="splash.png" id="iNH-cH-Dor">
-                    <rect key="frame" x="0.0" y="-10" width="375" height="686"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="iNH-cH-Dor">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83920127470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Lf-iy-d0C">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-iy-d0C">
                     <rect key="frame" x="0.0" y="601" width="375" height="66"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.14901960784313725" green="0.32941176470588235" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="o2g-ie-TWH"/>
+                    </constraints>
                     <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                     <state key="normal" title="S I G N  U P">
                         <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,9 +38,8 @@
                         <action selector="SIGN_UP:" destination="-1" eventType="touchUpInside" id="zaI-a9-0T6"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gkz-gh-Ikl">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkz-gh-Ikl">
                     <rect key="frame" x="0.0" y="535" width="375" height="66"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.85882352941176465" green="0.32941176470588235" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                     <state key="normal" title="L O G  I N">
@@ -50,8 +50,39 @@
                         <action selector="SIGN_IN:" destination="-1" eventType="touchUpInside" id="cwS-ug-M0C"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dr0-JU-ka3">
+                    <rect key="frame" x="0.0" y="469" width="375" height="66"/>
+                    <color key="backgroundColor" red="0.14901960780000001" green="0.3294117647" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="HIh-Zg-e34"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
+                    <state key="normal" title="Facebook">
+                        <color key="titleColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="SIGN_UP:" destination="-1" eventType="touchUpInside" id="VFt-wN-hvY"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="iNH-cH-Dor" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="0xP-gc-Vy7"/>
+                <constraint firstItem="8Lf-iy-d0C" firstAttribute="top" secondItem="gkz-gh-Ikl" secondAttribute="bottom" id="2BK-7e-Jbe"/>
+                <constraint firstAttribute="bottom" secondItem="iNH-cH-Dor" secondAttribute="bottom" id="69d-ZC-Puz"/>
+                <constraint firstItem="iNH-cH-Dor" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8Wm-l4-GJO"/>
+                <constraint firstItem="gkz-gh-Ikl" firstAttribute="top" secondItem="Dr0-JU-ka3" secondAttribute="bottom" id="Czw-w7-ZCr"/>
+                <constraint firstItem="gkz-gh-Ikl" firstAttribute="height" secondItem="8Lf-iy-d0C" secondAttribute="height" id="EoF-h6-rDl"/>
+                <constraint firstAttribute="trailing" secondItem="iNH-cH-Dor" secondAttribute="trailing" id="IwI-aZ-tJc"/>
+                <constraint firstAttribute="trailing" secondItem="gkz-gh-Ikl" secondAttribute="trailing" id="MyY-2v-1Kl"/>
+                <constraint firstItem="Dr0-JU-ka3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q3D-Bu-3Kn"/>
+                <constraint firstAttribute="trailing" secondItem="8Lf-iy-d0C" secondAttribute="trailing" id="Y9l-hw-24p"/>
+                <constraint firstItem="8Lf-iy-d0C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d9v-bf-8uo"/>
+                <constraint firstItem="gkz-gh-Ikl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="h7h-pw-YZo"/>
+                <constraint firstAttribute="bottom" secondItem="8Lf-iy-d0C" secondAttribute="bottom" id="txA-lI-3ze"/>
+                <constraint firstAttribute="trailing" secondItem="Dr0-JU-ka3" secondAttribute="trailing" id="zMv-r1-F5X"/>
+            </constraints>
             <point key="canvasLocation" x="282" y="289"/>
         </view>
     </objects>
