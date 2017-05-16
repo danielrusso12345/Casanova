@@ -9,15 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "PostFunctionHelper.h"
 #import "JSONRequestHelper.h"
-//#import "BLMultiColorLoader.h"
-//#import "HHAlertView.h"
-//#import <GooglePlus/GooglePlus.h>
-//#import <GoogleOpenSource/GoogleOpenSource.h>
-//#import <FacebookSDK/FacebookSDK.h>
 
-
-@interface LoginViewController2 : UIViewController<PostFunctionDelegate,UITextFieldDelegate>//<UIAlertViewDelegate,PostFunctionDelegate,WebserviceDelegate,GPPSignInDelegate,UITextFieldDelegate>
-{
+@interface LoginViewController2 : UIViewController<PostFunctionDelegate,UITextFieldDelegate> {
     PostFunctionHelper *post;
     NSMutableArray *Ary_Parameter,*Ary_Value,*Ary_Image;
     UIAlertView *alert;
@@ -40,21 +33,6 @@
 }
 
 
-@property (weak, nonatomic) IBOutlet UITextField *txt_Email,*txt_Username1;
-@property (weak, nonatomic) IBOutlet UITextField *txt_password,*TF_country,*TF_city;;
-@property (strong, nonatomic) IBOutlet UILabel *lbl_bg,*lbl_blank;
-@property (strong, nonatomic) IBOutlet UIButton *btn_login;
-@property (weak, nonatomic) IBOutlet UIButton *btn_loging,*btn_check;
-@property(strong,nonatomic)UIActivityViewController *activityViewController;
-//@property (weak,nonatomic) NSString *str_instagram,*str_InstaName,*str_InstaImg;
-//@property (retain, nonatomic) IBOutlet GPPSignInButton *signInButton;
-@property (weak, nonatomic) IBOutlet UIView *my_view;
-- (IBAction)Forgot_Button:(id)sender;
 
-- (IBAction)login_button:(id)sender;
-- (IBAction)FaceBook:(id)sender;
-//- (IBAction)FacebookLogin_Action:(id)sender;
-
-//-(IBAction)instagram_Action:(id)sender;
 
 @end
