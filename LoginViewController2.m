@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *txt_password;
 @property (strong, nonatomic) IBOutlet UIButton *btn_login;
 @property(strong,nonatomic)UIActivityViewController *activityViewController;
+@property (weak, nonatomic) IBOutlet UILabel *lbl_blank;
 
 @end
 
@@ -37,6 +38,16 @@
     flag = 0;
     self.btn_login.layer.cornerRadius = self.btn_login.frame.size.height/2;
     self.btn_login.clipsToBounds = YES;
+    
+    _lbl_blank.layer.masksToBounds = true;
+    _lbl_blank.layer.cornerRadius =_lbl_blank.frame.size.width/2;// 12.0;
+    _lbl_blank.layer.borderColor = [UIColor whiteColor].CGColor;
+    _lbl_blank.layer.borderWidth = 1.0;
+    
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (IBAction)Back_Button:(id)sender {
@@ -232,9 +243,12 @@
         // [self animateTextField:textField up:NO];
         if ((![self.txt_Email.text isEqualToString:@""] ) && self.txt_password.text.length>=3) {
             self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-            [self.btn_login setBackgroundColor:[UIColor colorWithRed:227.0/255 green:128.0/255 blue:139.0/255 alpha:1.0]];
+            [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
             self.btn_login.titleLabel.textColor=[UIColor whiteColor];
             self.btn_login.clipsToBounds=YES;
+            self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
+            self.btn_login.layer.borderWidth = 1.0;
+
         }
     }
 }
@@ -298,9 +312,11 @@
         }
         if ((![self.txt_Email.text isEqualToString:@""] ) && self.txt_password.text.length>=3) {
             self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-            [self.btn_login setBackgroundColor:[UIColor colorWithRed:227.0/255 green:128.0/255 blue:139.0/255 alpha:1.0]];
+            [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
             self.btn_login.titleLabel.textColor=[UIColor whiteColor];
             self.btn_login.clipsToBounds=YES;
+            self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
+            self.btn_login.layer.borderWidth = 1.0;
         }
         return ([[string componentsSeparatedByCharactersInSet:unacceptedInput] count] <= 1);
     }
@@ -315,9 +331,11 @@
         alert = [[UIAlertView alloc]initWithTitle:@"Information Message" message:str delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
         self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-        [self.btn_login setBackgroundColor:[UIColor whiteColor]];
-        self.btn_login.titleLabel.textColor=[UIColor colorWithRed:227.0/255 green:128.0/255 blue:139.0/255 alpha:1.0];
+        [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
+        self.btn_login.titleLabel.textColor=[UIColor whiteColor];
         self.btn_login.clipsToBounds=YES;
+        self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
+        self.btn_login.layer.borderWidth = 1.0;
         return;
     }
     else {

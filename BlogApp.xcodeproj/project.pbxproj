@@ -183,6 +183,9 @@
 		04A79D441DE3229E00619E85 /* Respond_ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */; };
 		6E264AC01EC9F8E400B3798F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */; };
 		6EA7FD741EC9FA2E00C02103 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */; };
+		E98D8FB01ECCB50500F56FF8 /* Signup.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAE1ECCB50500F56FF8 /* Signup.png */; };
+		E98D8FB11ECCB50500F56FF8 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAF1ECCB50500F56FF8 /* Login.png */; };
+		E98D8FB31ECCC07800F56FF8 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FB21ECCC07800F56FF8 /* BackButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -444,6 +447,9 @@
 		04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Respond_ViewController1.xib; sourceTree = "<group>"; };
 		6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E98D8FAE1ECCB50500F56FF8 /* Signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup.png; sourceTree = "<group>"; };
+		E98D8FAF1ECCB50500F56FF8 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		E98D8FB21ECCC07800F56FF8 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -669,6 +675,7 @@
 				04A1CCBF1DE5A2E3005CAEAA /* iTunesArtwork@1x.png */,
 				04A1CCC01DE5A2E3005CAEAA /* iTunesArtwork@2x.png */,
 				04A1CCC11DE5A2E3005CAEAA /* iTunesArtwork@3x.png */,
+				E98D8FB21ECCC07800F56FF8 /* BackButton.png */,
 				04A1CCBD1DE5A290005CAEAA /* splash.png */,
 				04A169281DE2BA6B00A582C2 /* My View 1 Login.png */,
 				04A169261DE2B82B00A582C2 /* Default-568h@2x.png */,
@@ -748,6 +755,8 @@
 		04A168CB1DE2B6AE00A582C2 /* ExtraFiles */ = {
 			isa = PBXGroup;
 			children = (
+				E98D8FAF1ECCB50500F56FF8 /* Login.png */,
+				E98D8FAE1ECCB50500F56FF8 /* Signup.png */,
 				04A6408B1DE410E3000124D5 /* ELCImagepickerClass */,
 				04A640811DE40B7E000124D5 /* kiimagepager */,
 				04A169221DE2B74800A582C2 /* Avtar */,
@@ -1203,6 +1212,7 @@
 				04A1CCE41DE5A313005CAEAA /* Icon-App-40x40@3x.png in Resources */,
 				0441D4581DE845E000F41097 /* BRPhotoPicker.storyboard in Resources */,
 				04A1CCBE1DE5A290005CAEAA /* splash.png in Resources */,
+				E98D8FB31ECCC07800F56FF8 /* BackButton.png in Resources */,
 				04A1CCF01DE5A313005CAEAA /* Icon-Small-50x50@1x.png in Resources */,
 				04A1CCE91DE5A313005CAEAA /* Icon-App-60x60@3x.png in Resources */,
 				04A79D3E1DE318CA00619E85 /* Reviews.xib in Resources */,
@@ -1227,8 +1237,10 @@
 				04A169381DE2D8CE00A582C2 /* GreatVibes-Regular.otf in Resources */,
 				04A669401E1FB95F002885E1 /* ForgotPasswordViewController.xib in Resources */,
 				04A1CCDC1DE5A313005CAEAA /* Icon-App-20x20@1x.png in Resources */,
+				E98D8FB11ECCB50500F56FF8 /* Login.png in Resources */,
 				04A1CCC21DE5A2E3005CAEAA /* iTunesArtwork@1x.png in Resources */,
 				04A1CCDD1DE5A313005CAEAA /* Icon-App-20x20@2x.png in Resources */,
+				E98D8FB01ECCB50500F56FF8 /* Signup.png in Resources */,
 				045F9BA81DE6F9F900C6CF34 /* EditProfileViewController.xib in Resources */,
 				04A1CCC31DE5A2E3005CAEAA /* iTunesArtwork@2x.png in Resources */,
 				04A1CCEB1DE5A313005CAEAA /* Icon-App-72x72@2x.png in Resources */,

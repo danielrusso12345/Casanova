@@ -51,10 +51,10 @@
      Arr_skill_name=[[NSMutableArray alloc]init];
     
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius = 12.0;//lbl_color.frame.size.width/2;
+    lbl_color.layer.cornerRadius = lbl_color.frame.size.width/2;
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = 12.0;//lbl_blank.frame.size.width/2;
+    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
 }

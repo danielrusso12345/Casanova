@@ -47,7 +47,7 @@
     
     lbl_blank.layer.masksToBounds = true;
     lbl_blank.layer.cornerRadius =lbl_blank.frame.size.width/2;// 12.0;
-    lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
+    lbl_blank.layer.borderColor = [UIColor whiteColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
     img_view.layer.cornerRadius = img_view.frame.size.width / 2;
     img_view.clipsToBounds = YES;
@@ -127,8 +127,10 @@
         [Myalert show];
         
         btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
+            btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
+        btn_sign_up.layer.borderWidth = 1.0;
         [btn_sign_up setBackgroundColor:[UIColor whiteColor]];
-        btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:1.0/255 green:110.0/255 blue:166.0/255 alpha:1.0];
+        btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
         btn_sign_up.clipsToBounds=YES;
         
     }
@@ -275,7 +277,9 @@
         if ((![txt_password.text isEqualToString:@""] ) && txt_confirm_password.text.length>=3)
         {
             btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
-            [btn_sign_up setBackgroundColor:[UIColor colorWithRed:1.0/255 green:110.0/255 blue:166.0/255 alpha:1.0]];
+             btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
+            btn_sign_up.layer.borderWidth = 1.0;
+            [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
             btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
             btn_sign_up.clipsToBounds=YES;
         }
@@ -588,7 +592,9 @@
             if ((![txt_password.text isEqualToString:@""] ) && txt_confirm_password.text.length>=3)
             {
                 btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
-                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:1.0/255 green:110.0/255 blue:166.0/255 alpha:1.0]];
+                 btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
+                btn_sign_up.layer.borderWidth = 1.0;
+                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
                 btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
                 btn_sign_up.clipsToBounds=YES;
             }
@@ -630,7 +636,9 @@
             if ((![txt_password.text isEqualToString:@""] ) && txt_confirm_password.text.length>=3)
             {
                 btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
-                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:1.0/255 green:110.0/255 blue:166.0/255 alpha:1.0]];
+                 btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
+                btn_sign_up.layer.borderWidth = 1.0;
+                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
                 btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
                 btn_sign_up.clipsToBounds=YES;
             }

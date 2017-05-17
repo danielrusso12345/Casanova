@@ -40,10 +40,10 @@
 //        
 //    }
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius = 12.0;//lbl_color.frame.size.width/2;
+    lbl_color.layer.cornerRadius = lbl_color.frame.size.width/2;
     
     lbl_blank.layer.masksToBounds = true;
-    lbl_blank.layer.cornerRadius = 12.0;//lbl_blank.frame.size.width/2;
+    lbl_blank.layer.cornerRadius = lbl_blank.frame.size.width/2;
     lbl_blank.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_blank.layer.borderWidth = 1.0;
     btn_newpost.layer.cornerRadius = 10.0; // this value vary as per your desire
@@ -245,7 +245,7 @@
                // img_profile.contentMode = UIViewContentModeScaleAspectFit;
                  img_profile.layer.cornerRadius =img_profile.frame.size.width/2;
                 
-                img_profile.layer.borderColor=[UIColor colorWithRed:38.0/255 green:84.0/255 blue:124.0/255 alpha:.50].CGColor;
+                img_profile.layer.borderColor=[UIColor colorWithRed:86.0/255 green:82.0/255 blue:100.0/255 alpha:.50].CGColor;
                 img_profile.layer.borderWidth=1.0f;
                 img_profile.clipsToBounds=YES;
                 UITapGestureRecognizer * tapimage=[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showAvatar:)];

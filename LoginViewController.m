@@ -33,7 +33,7 @@
     FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
     [loginManager logOut];
     //[FBSDKAccessToken setCurrentAccessToken:nil];
-    self.my_view.hidden=YES;
+    self.my_view.hidden=NO;
     flag_checkBox = 0;
     flag=0;
     
