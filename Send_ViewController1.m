@@ -103,7 +103,7 @@
             btn_update.hidden=YES;
         
         flag=1;
-       TV_terms.text=@"Please, tell me anything…";
+       TV_terms.text=@"Ask me anything...";
         
     [TV_terms.layer setBorderColor:[UIColor colorWithRed:86.0/255.0 green:82.0/255.0 blue:100.0/255.0 alpha:1.0f].CGColor];
         [TV_terms.layer setBorderWidth:1.0];
@@ -185,9 +185,9 @@
     NSString *strinvalid=nil;
     
   
-    if ([TV_terms.text isEqualToString:@"Please, tell me anything…"])
+    if ([TV_terms.text isEqualToString:@"Ask me anything..."])
     {
-        strinvalid=@"Please, tell me anything…";
+        strinvalid=@"Ask me anything...";
     }
     
     return strinvalid;
@@ -487,7 +487,7 @@
 {
     if(textView==TV_terms)
     {
-        if ([textView.text isEqualToString:@"Please, tell me anything…"])
+        if ([textView.text isEqualToString:@"Ask me anything..."])
         {
             TV_terms.text=@"";
         }
@@ -507,7 +507,7 @@
     
     if ([trimmed length] == 0 || textView.text.length==0)
     {
-        TV_terms.text=@"Please, tell me anything…";
+        TV_terms.text=@"Ask me anything...";
         
         textView.textColor = [UIColor darkGrayColor];
         
@@ -540,7 +540,7 @@
 
 -(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    if (![TV_terms.text isEqualToString:@"Please, tell me anything…"])
+    if (![TV_terms.text isEqualToString:@"Ask me anything..."])
     {
         if (TV_terms.text.length>0)
         {
@@ -1477,7 +1477,7 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
     Start_time1.text=@"";
     End_time2.text=@"";
     End_time1.text=@"";
-   TV_terms.text=@"Please, tell me anything…";
+   TV_terms.text=@"Ask me anything...";
     img_view.image=[UIImage imageNamed:@"picture128.png"];
      flag=1;
 //    Create_Staff_ViewController1 *crea=[[Create_Staff_ViewController1 alloc]initWithNibName:@"Create_Staff_ViewController1" bundle:nil];

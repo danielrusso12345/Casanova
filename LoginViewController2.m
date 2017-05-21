@@ -38,6 +38,8 @@
     flag = 0;
     self.btn_login.layer.cornerRadius = self.btn_login.frame.size.height/2;
     self.btn_login.clipsToBounds = YES;
+    self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
+    self.btn_login.layer.borderWidth = 1.0;
     
     _lbl_blank.layer.masksToBounds = true;
     _lbl_blank.layer.cornerRadius =_lbl_blank.frame.size.width/2;// 12.0;
@@ -243,8 +245,8 @@
         // [self animateTextField:textField up:NO];
         if ((![self.txt_Email.text isEqualToString:@""] ) && self.txt_password.text.length>=3) {
             self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-            [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-            self.btn_login.titleLabel.textColor=[UIColor whiteColor];
+            [self.btn_login setBackgroundColor:[UIColor whiteColor]];
+            self.btn_login.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
             self.btn_login.clipsToBounds=YES;
             self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
             self.btn_login.layer.borderWidth = 1.0;
@@ -312,8 +314,8 @@
         }
         if ((![self.txt_Email.text isEqualToString:@""] ) && self.txt_password.text.length>=3) {
             self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-            [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-            self.btn_login.titleLabel.textColor=[UIColor whiteColor];
+            [self.btn_login setBackgroundColor:[UIColor whiteColor]];
+            self.btn_login.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
             self.btn_login.clipsToBounds=YES;
             self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
             self.btn_login.layer.borderWidth = 1.0;
@@ -331,8 +333,8 @@
         alert = [[UIAlertView alloc]initWithTitle:@"Information Message" message:str delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
         self.btn_login.layer.cornerRadius=self.btn_login.frame.size.height/2;
-        [self.btn_login setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-        self.btn_login.titleLabel.textColor=[UIColor whiteColor];
+        [self.btn_login setBackgroundColor:[UIColor whiteColor]];
+        self.btn_login.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
         self.btn_login.clipsToBounds=YES;
         self.btn_login.layer.borderColor = [UIColor whiteColor].CGColor;
         self.btn_login.layer.borderWidth = 1.0;

@@ -51,6 +51,8 @@
     lbl_blank.layer.borderWidth = 1.0;
     img_view.layer.cornerRadius = img_view.frame.size.width / 2;
     img_view.clipsToBounds = YES;
+    btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
+    btn_sign_up.layer.borderWidth = 1.0;
     
     pickerToolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, 320, 44)];
     pickerToolbar.barStyle = UIBarStyleBlackOpaque;
@@ -112,7 +114,7 @@
         
          [MBProgressHUD hideAllHUDsForView:self.view animated:true];
         
-                UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"Information Message" message:@"No internet connection" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"School of Casanova" message:@"No internet connection" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
                 [Myalert show];
         
        
@@ -123,14 +125,14 @@
     else if (str1)
     {
         
-        UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"Information Message" message:str1 delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"School of Casanova" message:str1 delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [Myalert show];
         
         btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
             btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
         btn_sign_up.layer.borderWidth = 1.0;
-        [btn_sign_up setBackgroundColor:[UIColor whiteColor]];
-        btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
+        [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
+        btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:0.0/255 green:0.0/255 blue:0.0/255 alpha:1.0];
         btn_sign_up.clipsToBounds=YES;
         
     }
@@ -138,7 +140,7 @@
     {
       
         
-        UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"Information Message" message:@"Please accept terms & conditions and privacy policies" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *  Myalert=[[UIAlertView alloc]initWithTitle:@"School of Casanova" message:@"Please accept terms & conditions and privacy policies" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [Myalert show];
         
         
@@ -201,9 +203,7 @@
 //        
 //         [pref setObject:str_user_ID forKey:@"pref_User_Id"];
 //         [pref setObject:[Dictionary valueForKey:@"email"] forKey:@"pref_email_sign"];
-        
-          UIAlertView * alert=[[UIAlertView alloc]initWithTitle:@"Information Message" message:[Dictionary objectForKey:@"msg"] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
-                [alert show];
+    
         
         LoginViewController2 *los=[[LoginViewController2 alloc]initWithNibName:@"LoginViewController2" bundle:nil];
         [self.navigationController pushViewController:los animated:NO];
@@ -229,7 +229,7 @@
     {
         [MBProgressHUD hideHUDForView:self.view animated:NO];
         
-       UIAlertView * alert=[[UIAlertView alloc]initWithTitle:@"Information Message" message:[Dictionary objectForKey:@"msg"] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+       UIAlertView * alert=[[UIAlertView alloc]initWithTitle:@"School of Casanova" message:[Dictionary objectForKey:@"msg"] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
         
     }
@@ -279,8 +279,8 @@
             btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
              btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
             btn_sign_up.layer.borderWidth = 1.0;
-            [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-            btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
+            [btn_sign_up setBackgroundColor:[UIColor whiteColor]];
+            btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
             btn_sign_up.clipsToBounds=YES;
         }
         return ([[string componentsSeparatedByCharactersInSet:unacceptedInput] count] <= 1);
@@ -594,8 +594,8 @@
                 btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
                  btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
                 btn_sign_up.layer.borderWidth = 1.0;
-                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-                btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
+                [btn_sign_up setBackgroundColor:[UIColor whiteColor]];
+                btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
                 btn_sign_up.clipsToBounds=YES;
             }
 
@@ -638,8 +638,8 @@
                 btn_sign_up.layer.cornerRadius=btn_sign_up.frame.size.height/2;
                  btn_sign_up.layer.borderColor = [UIColor whiteColor].CGColor;
                 btn_sign_up.layer.borderWidth = 1.0;
-                [btn_sign_up setBackgroundColor:[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0]];
-                btn_sign_up.titleLabel.textColor=[UIColor whiteColor];
+                [btn_sign_up setBackgroundColor:[UIColor whiteColor]];
+                btn_sign_up.titleLabel.textColor=[UIColor colorWithRed:148.0/255 green:110.0/255 blue:131.0/255 alpha:1.0];
                 btn_sign_up.clipsToBounds=YES;
             }
         }
@@ -667,36 +667,36 @@
     NSString *strinvalid;
     if(flag==1)
     {
-        strinvalid=@"Please add photo";
+        strinvalid=@"Please add a photo";
     }
    
     else if ([txt_name.text isEqualToString:@""])
     {
-        strinvalid=@"Please enter A name";
+        strinvalid=@"Please enter a name";
         //return strinvalid;
     }
     else if (![self validateEmail:txt_email.text])
     {
-        strinvalid=@"Please enter valid email";
+        strinvalid=@"Please enter a valid email";
         //return strinvalid;
         
     }
     else if([txt_password.text isEqualToString:@""])
     {
-        strinvalid=@"please enter password";
+        strinvalid=@"Please enter a password";
         //return strinvalid;
     }
     else if([txt_password.text isEqualToString:@""]|| [txt_password.text isEqualToString:@"NA"] || txt_password.text.length<=3)
     {
-        strinvalid=@"Please Enter Password Minimum 4 & Maximum 15 character to Continue";
+        strinvalid=@"Please Enter Password Minimum 4 & Maximum 15 characters to Continue";
     }
     else if([txt_confirm_password.text isEqualToString:@""]|| [txt_confirm_password.text isEqualToString:@"NA"])
     {
-        strinvalid=@" Please Enter Confirm Password";
+        strinvalid=@" Please Confirm Password";
     }
     else if ((![txt_password.text isEqualToString:txt_confirm_password.text]))
     {
-        strinvalid=@"Please enter matching password";
+        strinvalid=@"Please enter matching passwords";
     }
 //    else if([txt_phone.text isEqualToString:@""]|| [txt_phone.text isEqualToString:@"NA"] || txt_phone.text.length<=4)
 //    {

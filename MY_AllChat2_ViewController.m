@@ -288,7 +288,7 @@
             
             UIView *mainView = [subviewArray objectAtIndex:0];
             
-            home.frame=CGRectMake(0, myvar, self.view.bounds.size.width, 60);
+            home.frame=CGRectMake(0, myvar, self.view.bounds.size.width, 250);
             
             
             [scroll_view1 addSubview:mainView];
@@ -308,6 +308,7 @@
             if ([[[Arr_data valueForKey:@"flag"] objectAtIndex:i]isEqualToString:@"received"])
             {
                 lbl_time.text=[NSString stringWithFormat:@"M E S S A G E  R E C E I V E D"];
+                lbl_time.font= [UIFont fontWithName:@"Palatino-Bold" size:18.0f];
             }
             else
             {
