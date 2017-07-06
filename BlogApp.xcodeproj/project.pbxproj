@@ -186,6 +186,8 @@
 		E98D8FB01ECCB50500F56FF8 /* Signup.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAE1ECCB50500F56FF8 /* Signup.png */; };
 		E98D8FB11ECCB50500F56FF8 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAF1ECCB50500F56FF8 /* Login.png */; };
 		E98D8FB31ECCC07800F56FF8 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FB21ECCC07800F56FF8 /* BackButton.png */; };
+		E9F167541ED2111000808A18 /* Icon-App-120x120@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F167531ED2111000808A18 /* Icon-App-120x120@3x.png */; };
+		E9F167561ED2111600808A18 /* Icon-App-120x120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9F167551ED2111600808A18 /* Icon-App-120x120@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -447,9 +449,12 @@
 		04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Respond_ViewController1.xib; sourceTree = "<group>"; };
 		6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E91AE1B31EDFE24200325ED6 /* BlogApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlogApp.entitlements; sourceTree = "<group>"; };
 		E98D8FAE1ECCB50500F56FF8 /* Signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup.png; sourceTree = "<group>"; };
 		E98D8FAF1ECCB50500F56FF8 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		E98D8FB21ECCC07800F56FF8 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		E9F167531ED2111000808A18 /* Icon-App-120x120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-120x120@3x.png"; sourceTree = "<group>"; };
+		E9F167551ED2111600808A18 /* Icon-App-120x120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-120x120@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -669,12 +674,14 @@
 				04A168951DE2B42D00A582C2 /* Products */,
 				04A168CB1DE2B6AE00A582C2 /* ExtraFiles */,
 				04A669421E1FC0AD002885E1 /* pc@3x.png */,
+				E9F167551ED2111600808A18 /* Icon-App-120x120@2x.png */,
 				04A669371E1FAEAC002885E1 /* checked24.png */,
 				04A669341E1FA3A1002885E1 /* unch24.png */,
 				04A2A2D81DED62BB00DD9CDD /* Background Casanova 2.jpg */,
 				04A1CCBF1DE5A2E3005CAEAA /* iTunesArtwork@1x.png */,
 				04A1CCC01DE5A2E3005CAEAA /* iTunesArtwork@2x.png */,
 				04A1CCC11DE5A2E3005CAEAA /* iTunesArtwork@3x.png */,
+				E9F167531ED2111000808A18 /* Icon-App-120x120@3x.png */,
 				E98D8FB21ECCC07800F56FF8 /* BackButton.png */,
 				04A1CCBD1DE5A290005CAEAA /* splash.png */,
 				04A169281DE2BA6B00A582C2 /* My View 1 Login.png */,
@@ -695,6 +702,7 @@
 		04A168961DE2B42D00A582C2 /* BlogApp */ = {
 			isa = PBXGroup;
 			children = (
+				E91AE1B31EDFE24200325ED6 /* BlogApp.entitlements */,
 				04A1689B1DE2B42D00A582C2 /* AppDelegate.h */,
 				04A1689C1DE2B42D00A582C2 /* AppDelegate.m */,
 				04A168A41DE2B42D00A582C2 /* Images.xcassets */,
@@ -1151,6 +1159,11 @@
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = CMDT3JM28A;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					04A168AC1DE2B42D00A582C2 = {
 						CreatedOnToolsVersion = 6.1;
@@ -1221,7 +1234,9 @@
 				04A1CCDF1DE5A313005CAEAA /* Icon-App-29x29@1x.png in Resources */,
 				04A1CCEF1DE5A313005CAEAA /* Icon-App-83.5x83.5@2x.png in Resources */,
 				04A640AA1DE42431000124D5 /* My_Message_ViewController.xib in Resources */,
+				E9F167561ED2111600808A18 /* Icon-App-120x120@2x.png in Resources */,
 				0441D4861DE8466200F41097 /* add.png in Resources */,
+				E9F167541ED2111000808A18 /* Icon-App-120x120@3x.png in Resources */,
 				04A6407A1DE3FEF5000124D5 /* Send_ViewController1.xib in Resources */,
 				04A1CCE61DE5A313005CAEAA /* Icon-App-57x57@2x.png in Resources */,
 				04A1CCE81DE5A313005CAEAA /* Icon-App-60x60@2x.png in Resources */,
@@ -1486,9 +1501,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogApp/BlogApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1509,9 +1525,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BlogApp/BlogApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
