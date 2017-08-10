@@ -90,16 +90,16 @@
         
         flag=1;
        TV_terms.text=str_dec;
-        
+    
        // [TV_terms.layer setBorderColor:[[[UIColor grayColor] colorWithAlphaComponent:0.5] CGColor]];
         //[TV_terms.layer setBorderWidth:1.0];
-        TV_terms.clipsToBounds = YES;
+//        TV_terms.clipsToBounds = YES;
   
 
 
-    lbl_bg11.layer.masksToBounds = true;
+//    lbl_bg11.layer.masksToBounds = true;
     
-    lbl_bg11.layer.cornerRadius = 5.0;
+//    lbl_bg11.layer.cornerRadius = 5.0;
     
     // arr_cat_name=[[NSMutableArray alloc]initWithObjects:@"sushil",@"kripa",@"jay",@"pawan",@"ankit",@"diksha",@"sanjay",@"ruchi", nil];
   //  self.navigationController.navigationBarHidden=NO;
@@ -109,39 +109,39 @@
    
     
     
-    view2=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
+//    view2=[[UIView alloc]initWithFrame:CGRectMake(0, 0, 320, 200)];
+//    
+//    
+//    // Do any additional setup after loading the view from its nib.
+//    
+//    
+//    keyboardToolbar1 = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0,320, 44)];
+//    
+//    [keyboardToolbar1 setBarStyle:UIBarStyleBlackTranslucent];
+//    
+//    UIBarButtonItem *cancel1 = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(CancelButton)];
+//    
+//    [cancel1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                    [UIFont fontWithName:@"Sansation" size:17.0], NSFontAttributeName,
+//                                    [UIColor whiteColor], NSForegroundColorAttributeName,
+//                                    nil]
+//                          forState:UIControlStateNormal];
+//    
+//    UIBarButtonItem *extraSpace1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+//    
+//    UIBarButtonItem *accept1 = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(closeKeyboard:)];
+//    
+//    [accept1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
+//                                    [UIFont fontWithName:@"Sansation" size:17.0], NSFontAttributeName,
+//                                    [UIColor whiteColor], NSForegroundColorAttributeName,
+//                                    nil]
+//                          forState:UIControlStateNormal];
+//    
+//    [keyboardToolbar1 setItems:[[NSArray alloc] initWithObjects: cancel1,extraSpace1, accept1, nil]];
     
     
-    // Do any additional setup after loading the view from its nib.
     
-    
-    keyboardToolbar1 = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0,320, 44)];
-    
-    [keyboardToolbar1 setBarStyle:UIBarStyleBlackTranslucent];
-    
-    UIBarButtonItem *cancel1 = [[UIBarButtonItem alloc] initWithTitle:@"Cancel" style:UIBarButtonItemStyleDone target:self action:@selector(CancelButton)];
-    
-    [cancel1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                    [UIFont fontWithName:@"Sansation" size:17.0], NSFontAttributeName,
-                                    [UIColor whiteColor], NSForegroundColorAttributeName,
-                                    nil]
-                          forState:UIControlStateNormal];
-    
-    UIBarButtonItem *extraSpace1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    
-    UIBarButtonItem *accept1 = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(closeKeyboard:)];
-    
-    [accept1 setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                    [UIFont fontWithName:@"Sansation" size:17.0], NSFontAttributeName,
-                                    [UIColor whiteColor], NSForegroundColorAttributeName,
-                                    nil]
-                          forState:UIControlStateNormal];
-    
-    [keyboardToolbar1 setItems:[[NSArray alloc] initWithObjects: cancel1,extraSpace1, accept1, nil]];
-    
-    
-    
-    [view2 addSubview:keyboardToolbar1];
+//    [view2 addSubview:keyboardToolbar1];
     
 //    datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, 44, 320, 200)];
 //    
@@ -152,11 +152,22 @@
 //    [view2 addSubview:datePicker];
 
    // [self getAllcategory];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.TV_terms scrollRangeToVisible:NSMakeRange(0, 1)];
+    });
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    TV_terms.scrollEnabled = NO;
+    TV_terms.scrollEnabled = YES;
+//    [self.TV_terms scrollRangeToVisible:NSMakeRange(0, 1)];
 }
 
 -(IBAction)Click_Action:(id)sender
@@ -1252,7 +1263,9 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info
 }
 -(void)viewWillAppear:(BOOL)animated
 {
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+//        [self.TV_terms scrollRangeToVisible:NSMakeRange(0, 1)];
+    });
 //    [UIView animateWithDuration:1 animations:^ {
 //        lbl_title.frame = CGRectMake(0, 112, [UIScreen mainScreen].bounds.size.width,40);
 //    } completion:^(BOOL finished) {
