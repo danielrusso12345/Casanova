@@ -73,7 +73,7 @@
     lbl_heading.text=[pref valueForKey:@"pref_cat_name"];
     lbl_title.text=str_sub_cate;
     lbl_color.layer.masksToBounds = true;
-    lbl_color.layer.cornerRadius =12.0; //lbl_color.frame.size.width/2;
+    lbl_color.layer.cornerRadius = lbl_color.frame.size.width/2;
     lbl_color.layer.borderColor = [UIColor grayColor].CGColor;
     lbl_color.layer.borderWidth = 1.0;
     
