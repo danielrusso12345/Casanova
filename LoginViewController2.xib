@@ -38,7 +38,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49y-p5-Tn8">
-                    <rect key="frame" x="12" y="11.5" width="54" height="54"/>
+                    <rect key="frame" x="-4" y="31" width="54.5" height="54"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="j8B-na-2WV"/>
                         <constraint firstAttribute="width" constant="54" id="tOf-Hm-nc5"/>
@@ -148,29 +148,39 @@
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-dz-yo9">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIr-dz-yo9">
                     <rect key="frame" x="9" y="44" width="28.5" height="28"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.99215686270000003" green="0.99215686270000003" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="LQk-9E-vFa"/>
+                        <constraint firstAttribute="width" constant="28" id="hhv-RN-5dY"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="UjG-OY-IWq">
-                    <rect key="frame" x="17" y="53" width="10" height="10"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="UjG-OY-IWq">
+                    <rect key="frame" x="18.5" y="53" width="10" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="4f7-2u-rCR"/>
+                        <constraint firstAttribute="width" constant="10" id="spD-28-7s6"/>
+                    </constraints>
                 </imageView>
             </subviews>
             <color key="backgroundColor" red="0.58039215686274503" green="0.43137254901960786" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="49y-p5-Tn8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="12" id="1ez-Ae-Phx"/>
                 <constraint firstItem="JoW-1i-4Pa" firstAttribute="top" secondItem="m9f-ST-w8Y" secondAttribute="bottom" id="A7c-L6-dFn"/>
                 <constraint firstItem="JoW-1i-4Pa" firstAttribute="trailing" secondItem="m9f-ST-w8Y" secondAttribute="trailing" id="B5A-S2-aVx"/>
                 <constraint firstItem="m9f-ST-w8Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="FQR-Xo-pMv"/>
                 <constraint firstAttribute="trailing" secondItem="m9f-ST-w8Y" secondAttribute="trailing" constant="16" id="KN8-tg-r1Q"/>
-                <constraint firstItem="m9f-ST-w8Y" firstAttribute="top" secondItem="49y-p5-Tn8" secondAttribute="bottom" constant="32" id="Zvm-0D-HVX"/>
+                <constraint firstItem="UjG-OY-IWq" firstAttribute="centerY" secondItem="sIr-dz-yo9" secondAttribute="centerY" id="T8y-cT-UWH"/>
+                <constraint firstItem="49y-p5-Tn8" firstAttribute="centerX" secondItem="sIr-dz-yo9" secondAttribute="centerX" id="T9t-sA-RsN"/>
+                <constraint firstItem="49y-p5-Tn8" firstAttribute="centerY" secondItem="sIr-dz-yo9" secondAttribute="centerY" id="Yu1-o9-Kws"/>
+                <constraint firstItem="sIr-dz-yo9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="9" id="fwb-je-Mwl"/>
                 <constraint firstItem="Qba-S3-iFL" firstAttribute="top" secondItem="JoW-1i-4Pa" secondAttribute="bottom" constant="24" id="ipw-YZ-6ye"/>
-                <constraint firstItem="49y-p5-Tn8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="jzo-kA-tcm"/>
+                <constraint firstItem="sIr-dz-yo9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="lAj-uW-ehn"/>
+                <constraint firstItem="m9f-ST-w8Y" firstAttribute="top" secondItem="49y-p5-Tn8" secondAttribute="bottom" constant="12.5" id="md3-fO-QeF"/>
+                <constraint firstItem="UjG-OY-IWq" firstAttribute="centerX" secondItem="sIr-dz-yo9" secondAttribute="centerX" id="vbp-K9-nep"/>
                 <constraint firstItem="Qba-S3-iFL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="woe-35-QL6"/>
             </constraints>
             <point key="canvasLocation" x="281.5" y="288.5"/>
