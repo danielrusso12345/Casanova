@@ -74,6 +74,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="HpW-c6-Rqq"/>
                         <constraint firstAttribute="width" constant="225" id="mKB-ji-hAp"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="225" id="nCG-Um-POC"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="GreatVibes-Regular" family="Great Vibes" pointSize="24"/>
                     <color key="textColor" red="0.33725490196078434" green="0.32156862745098036" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

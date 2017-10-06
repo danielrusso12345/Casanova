@@ -52,7 +52,7 @@ self.view.backgroundColor = [UIColor colorWithRed:219.0/255 green:219.0/255 blue
     [self.view addSubview:self.photoView];
     
     UIButton *cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    cancelBtn.frame = CGRectMake(120, CGRectGetHeight(self.view.frame) - 70, 100, 35);
+    cancelBtn.frame = CGRectMake(CGRectGetWidth(self.view.frame)/2.65, CGRectGetHeight(self.view.frame) - 70, 100, 35);
     cancelBtn.titleLabel.textAlignment = NSTextAlignmentLeft;
     [cancelBtn setTitle:NSLocalizedStringFromTable(@"Cancel", @"PhotoTweaks", nil) forState:UIControlStateNormal];
    // UIColor *cancelTitleColor = !self.cancelButtonTitleColor ?
@@ -70,7 +70,7 @@ self.view.backgroundColor = [UIColor colorWithRed:219.0/255 green:219.0/255 blue
     
     UIButton *cropBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     cropBtn.titleLabel.textAlignment = NSTextAlignmentRight;
-    cropBtn.frame = CGRectMake(120, CGRectGetHeight(self.view.frame) - 130, 100, 35);
+    cropBtn.frame = CGRectMake(CGRectGetWidth(self.view.frame)/2.65, CGRectGetHeight(self.view.frame) - 130, 100, 35);
     [cropBtn setTitle:NSLocalizedStringFromTable(@"Attach", @"PhotoTweaks", nil) forState:UIControlStateNormal];
     cropBtn.layer.masksToBounds = true;
     cropBtn.layer.cornerRadius = 5.0;

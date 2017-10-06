@@ -47,7 +47,6 @@
 @property(nonatomic,strong)IBOutlet UITextField *End_time1,*End_time2,*End_time3,*End_time4;
 @property(nonatomic,strong)IBOutlet UIButton *btn_back,*btn_add,*btn_update,*btn_attach,*btn_next;
 @property (weak, nonatomic) IBOutlet UILabel *lbl_heading,*lbl_title;
-
 @property (strong, nonatomic) IBOutlet UILabel *lbl_color,*lbl_blank;
 @property (strong, nonatomic) IBOutlet UIImage *image_view;
 @end
