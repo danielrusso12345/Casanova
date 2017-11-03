@@ -181,8 +181,10 @@
 		04A79D3E1DE318CA00619E85 /* Reviews.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A79D3B1DE318CA00619E85 /* Reviews.xib */; };
 		04A79D431DE3229E00619E85 /* Respond_ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A79D411DE3229E00619E85 /* Respond_ViewController1.m */; };
 		04A79D441DE3229E00619E85 /* Respond_ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */; };
+		0FB57A6548A273A1C789937F /* libPods-BlogApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D484CB6C3E6EA3CDE464CCBF /* libPods-BlogApp.a */; };
 		6E264AC01EC9F8E400B3798F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */; };
 		6EA7FD741EC9FA2E00C02103 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */; };
+		E4143B7C72DAD3D5C2E2562A /* libPods-BlogAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6D1168B8D447CB72C53E789 /* libPods-BlogAppTests.a */; };
 		E98D8FB01ECCB50500F56FF8 /* Signup.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAE1ECCB50500F56FF8 /* Signup.png */; };
 		E98D8FB11ECCB50500F56FF8 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FAF1ECCB50500F56FF8 /* Login.png */; };
 		E98D8FB31ECCC07800F56FF8 /* BackButton.png in Resources */ = {isa = PBXBuildFile; fileRef = E98D8FB21ECCC07800F56FF8 /* BackButton.png */; };
@@ -199,6 +201,19 @@
 			remoteInfo = BlogApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9DFEC151FAA37FB00954F08 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		042110DD1DEC419400D032A9 /* PhotoTweaksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoTweaksViewController.h; sourceTree = "<group>"; };
@@ -447,14 +462,26 @@
 		04A79D401DE3229E00619E85 /* Respond_ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Respond_ViewController1.h; sourceTree = "<group>"; };
 		04A79D411DE3229E00619E85 /* Respond_ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Respond_ViewController1.m; sourceTree = "<group>"; };
 		04A79D421DE3229E00619E85 /* Respond_ViewController1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Respond_ViewController1.xib; sourceTree = "<group>"; };
+		1660FFBBDA67BEDA3BDDA9D4 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		3BDBE089FACC94E690C2032B /* libPods-OneSignalNotificationServiceExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OneSignalNotificationServiceExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44AA82CC03765C78EF355B0C /* Pods-BlogAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlogAppTests/Pods-BlogAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6E264ABF1EC9F8E400B3798F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		6EA7FD731EC9FA2E00C02103 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		725B6198B4CD08E38BE60439 /* Pods-BlogApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BlogApp/Pods-BlogApp.debug.xcconfig"; sourceTree = "<group>"; };
+		9162B1BC08CBD69CAB6E3D7D /* Pods-BlogApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlogApp/Pods-BlogApp.release.xcconfig"; sourceTree = "<group>"; };
+		B192078E66035619CEB13952 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		D484CB6C3E6EA3CDE464CCBF /* libPods-BlogApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlogApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6D1168B8D447CB72C53E789 /* libPods-BlogAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BlogAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91AE1B31EDFE24200325ED6 /* BlogApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BlogApp.entitlements; sourceTree = "<group>"; };
 		E98D8FAE1ECCB50500F56FF8 /* Signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup.png; sourceTree = "<group>"; };
 		E98D8FAF1ECCB50500F56FF8 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
 		E98D8FB21ECCC07800F56FF8 /* BackButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BackButton.png; sourceTree = "<group>"; };
+		E9DFEC0B1FAA37FB00954F08 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		E9DFEC0C1FAA37FB00954F08 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		E9DFEC0E1FAA37FB00954F08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E9F167531ED2111000808A18 /* Icon-App-120x120@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-120x120@3x.png"; sourceTree = "<group>"; };
 		E9F167551ED2111600808A18 /* Icon-App-120x120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-120x120@2x.png"; sourceTree = "<group>"; };
+		EC4A0D934455FE208C4C6D88 /* Pods-BlogAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlogAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BlogAppTests/Pods-BlogAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -467,6 +494,7 @@
 				0441D4531DE8459800F41097 /* AssetsLibrary.framework in Frameworks */,
 				6E264AC01EC9F8E400B3798F /* FBSDKLoginKit.framework in Frameworks */,
 				0441D4511DE8446D00F41097 /* QuartzCore.framework in Frameworks */,
+				0FB57A6548A273A1C789937F /* libPods-BlogApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +502,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4143B7C72DAD3D5C2E2562A /* libPods-BlogAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,6 +700,7 @@
 				04A1693A1DE2D8D100A582C2 /* FONT */,
 				04A1692E1DE2C6B900A582C2 /* Category_view */,
 				04A168B01DE2B42D00A582C2 /* BlogAppTests */,
+				E9DFEC0A1FAA37FB00954F08 /* OneSignalNotificationServiceExtension */,
 				04A168951DE2B42D00A582C2 /* Products */,
 				04A168CB1DE2B6AE00A582C2 /* ExtraFiles */,
 				04A669421E1FC0AD002885E1 /* pc@3x.png */,
@@ -687,6 +717,8 @@
 				04A169281DE2BA6B00A582C2 /* My View 1 Login.png */,
 				04A169261DE2B82B00A582C2 /* Default-568h@2x.png */,
 				04A168C91DE2B5C900A582C2 /* Logo.png */,
+				E7FB363CFED3AC0B09EFDDE8 /* Pods */,
+				BBC28BEC2357D8E37387C8D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1108,22 +1140,59 @@
 			name = GKImagePicker;
 			sourceTree = "<group>";
 		};
+		BBC28BEC2357D8E37387C8D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D484CB6C3E6EA3CDE464CCBF /* libPods-BlogApp.a */,
+				E6D1168B8D447CB72C53E789 /* libPods-BlogAppTests.a */,
+				3BDBE089FACC94E690C2032B /* libPods-OneSignalNotificationServiceExtension.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FB363CFED3AC0B09EFDDE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				725B6198B4CD08E38BE60439 /* Pods-BlogApp.debug.xcconfig */,
+				9162B1BC08CBD69CAB6E3D7D /* Pods-BlogApp.release.xcconfig */,
+				44AA82CC03765C78EF355B0C /* Pods-BlogAppTests.debug.xcconfig */,
+				EC4A0D934455FE208C4C6D88 /* Pods-BlogAppTests.release.xcconfig */,
+				1660FFBBDA67BEDA3BDDA9D4 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				B192078E66035619CEB13952 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9DFEC0A1FAA37FB00954F08 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E9DFEC0B1FAA37FB00954F08 /* NotificationService.h */,
+				E9DFEC0C1FAA37FB00954F08 /* NotificationService.m */,
+				E9DFEC0E1FAA37FB00954F08 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		04A168931DE2B42D00A582C2 /* BlogApp */ = {
+		04A168931DE2B42D00A582C2 /* BlogApps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 04A168B71DE2B42D00A582C2 /* Build configuration list for PBXNativeTarget "BlogApp" */;
+			buildConfigurationList = 04A168B71DE2B42D00A582C2 /* Build configuration list for PBXNativeTarget "BlogApps" */;
 			buildPhases = (
+				84D1BBB5F3669A1795F742F8 /* [CP] Check Pods Manifest.lock */,
 				04A168901DE2B42D00A582C2 /* Sources */,
 				04A168911DE2B42D00A582C2 /* Frameworks */,
 				04A168921DE2B42D00A582C2 /* Resources */,
+				E9DFEC151FAA37FB00954F08 /* Embed App Extensions */,
+				C56CE49C4A26B09D76B58D08 /* [CP] Embed Pods Frameworks */,
+				423B327DF5E396BC0E543FCE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = BlogApp;
+			name = BlogApps;
 			productName = BlogApp;
 			productReference = 04A168941DE2B42D00A582C2 /* BlogApp.app */;
 			productType = "com.apple.product-type.application";
@@ -1132,9 +1201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04A168BA1DE2B42D00A582C2 /* Build configuration list for PBXNativeTarget "BlogAppTests" */;
 			buildPhases = (
+				82750368946249E1E48511BD /* [CP] Check Pods Manifest.lock */,
 				04A168A91DE2B42D00A582C2 /* Sources */,
 				04A168AA1DE2B42D00A582C2 /* Frameworks */,
 				04A168AB1DE2B42D00A582C2 /* Resources */,
+				9F92B043A553E1C8E109B39E /* [CP] Embed Pods Frameworks */,
+				786C6E6984CA259AEA49403D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1158,8 +1230,11 @@
 					04A168931DE2B42D00A582C2 = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = CMDT3JM28A;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -1185,7 +1260,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				04A168931DE2B42D00A582C2 /* BlogApp */,
+				04A168931DE2B42D00A582C2 /* BlogApps */,
 				04A168AC1DE2B42D00A582C2 /* BlogAppTests */,
 			);
 		};
@@ -1298,6 +1373,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		423B327DF5E396BC0E543FCE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogApp/Pods-BlogApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		786C6E6984CA259AEA49403D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogAppTests/Pods-BlogAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82750368946249E1E48511BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84D1BBB5F3669A1795F742F8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F92B043A553E1C8E109B39E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogAppTests/Pods-BlogAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C56CE49C4A26B09D76B58D08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BlogApp/Pods-BlogApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04A168901DE2B42D00A582C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -1404,7 +1572,7 @@
 /* Begin PBXTargetDependency section */
 		04A168AF1DE2B42D00A582C2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 04A168931DE2B42D00A582C2 /* BlogApp */;
+			target = 04A168931DE2B42D00A582C2 /* BlogApps */;
 			targetProxy = 04A168AE1DE2B42D00A582C2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1430,8 +1598,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1452,7 +1621,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1477,8 +1646,9 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1491,7 +1661,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1499,11 +1669,12 @@
 		};
 		04A168B81DE2B42D00A582C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 725B6198B4CD08E38BE60439 /* Pods-BlogApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlogApp/BlogApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1517,17 +1688,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zomerollc.yd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "uploading casanova";
 			};
 			name = Debug;
 		};
 		04A168B91DE2B42D00A582C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9162B1BC08CBD69CAB6E3D7D /* Pods-BlogApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BlogApp/BlogApp.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = CMDT3JM28A;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1541,16 +1713,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zomerollc.yd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "uploading casanova";
 			};
 			name = Release;
 		};
 		04A168BB1DE2B42D00A582C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44AA82CC03765C78EF355B0C /* Pods-BlogAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1563,17 +1737,20 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zomerollc.yd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlogApp.app/BlogApp";
 			};
 			name = Debug;
 		};
 		04A168BC1DE2B42D00A582C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4A0D934455FE208C4C6D88 /* Pods-BlogAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sumit Kaushal (A95KXL74Q6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = CMDT3JM28A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1582,7 +1759,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zomerollc.yd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "40c1ae9d-b600-4146-824c-1a3570e29164";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlogApp.app/BlogApp";
 			};
 			name = Release;
@@ -1599,7 +1777,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		04A168B71DE2B42D00A582C2 /* Build configuration list for PBXNativeTarget "BlogApp" */ = {
+		04A168B71DE2B42D00A582C2 /* Build configuration list for PBXNativeTarget "BlogApps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				04A168B81DE2B42D00A582C2 /* Debug */,
